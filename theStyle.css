@@ -6,6 +6,13 @@ h1 {
 				background: #000080;
 			}
 
+            p {
+                background-color: rgb(255, 255, 255);
+                color:rgb(255,155,155);
+                border: solid 10px;
+                padding: 4vw;  
+            }
+
             #theSpecial {
                 color: orange;
                 padding: 100px;
