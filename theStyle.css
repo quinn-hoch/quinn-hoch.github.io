@@ -26,9 +26,17 @@ h1 {
 
             button {
                 background-color:salmon;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-weight: 700;
                 padding: 10px;
+                border-color: #ff00dd;
                 border-radius: 30%;
                 color:aliceblue;
+    text-shadow:
+    -1px -1px 0 #ff00dd,
+    1px -1px 0 #ff00dd,
+    -1px 1px 0 #ff00dd,
+    1px 1px 0 #ff00dd; 
                
             }
             button:hover{
