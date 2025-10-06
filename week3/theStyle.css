@@ -1,32 +1,67 @@
-body {
-    background-color: pink;
+/* body {
+    background-color: rgb(159, 175, 197);
     /* what font on the google font api best matches rand's design?
-    how can you find it? */
+    how can you find it? 
 }
 
 main{
-    background-color: lightgreen;
-    display: flex;
-    border: 3px solid;
-    
+    display: flex;    
 }
 
 div {
-    background-color: blue;
+    display: flex;
     padding: 3vw;
     margin: 3vw;
     font-size: 20vw;
+    justify-content: center;
+    flex-direction: column;
+
 
 }
 #theBackward{
     
     transform: rotate(90deg);
     color: rgb(255,255,255);
-    flex-direction: column;
 }
 
 
 
 p {
-    background-color: rgb(255,255,255,.5)
 }
+*/
+body{
+  margin: 0;
+  background: #9fb0c6;
+  font-family: "Anton", sans-serif;
+}
+
+.poster{
+  position: relative;
+  height: 200vh;
+}
+
+.bg {
+  position: absolute;
+  font-size: 20vw;
+  font-weight: 500;
+  color: white;
+  transform: scaleX(2) rotate(90deg);
+}
+
+.bg:nth-child(1) { top: 3vh;  left: 40vw; }
+.bg:nth-child(2) { top: 30vh; left: 21vw; }
+.bg:nth-child(3) { top: 60vh; left: 35vw; }
+.bg:nth-child(4) { top: 90vh; left: 30vw; }
+
+.fg {
+  position: absolute;
+  font-size: 20vw;
+  font-weight: 500;
+  transform: scaleY(2);
+  color: black;
+}
+
+.fg:nth-child(5) { top: 37vh;  left: 5vw; }
+.fg:nth-child(6) { top: 67vh; left: 20vw; }
+.fg:nth-child(7) { top: 24vh;  left: 35vw; }
+.fg:nth-child(8) { top: 57vh; left: 55vw; }
