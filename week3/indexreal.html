@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title> Media is the Massage</title>
+        <link rel="stylesheet" href="MassageStyle.css"> 
+    </head>
+    <img style="width: 100vw;"src='https://cdn.pixabay.com/photo/2017/10/14/12/05/mirrors-2850352_640.png';>
+    <body>
+        <div>
+        <img id="image" class="fix" src=
+"https://static.vecteezy.com/system/resources/thumbnails/046/598/406/small_2x/glass-salt-shaker-with-metal-lid-and-white-salt-on-transparent-background-png.png"
+            alt="Salt shaker" />
+        <img id="cake" class="fix" src=
+"https://png.pngtree.com/png-clipart/20240103/original/pngtree-birthday-cake-png-image_14005993.png"
+            alt="cakeimage" style="width: 20vw;"/>
+    </div>
+    <button onclick="show()" id="btnID"
+    style="align-self: center; font-family: cursive; color: rgb(255, 13, 211)">
+    THE MEDIUM IS THE MASSAGE
+    </button>
+    <button onclick="show1()" id="button2">massage?</button>
+    <button onclick="show1()" id="button3">message**</button>
+    <script>
+        function show() {
+            document.getElementById('image')
+                .style.display="block";
+            document.getElementById('btnID')
+                .style.display="none";
+            document.getElementById('button2')
+                .style.display="block";
+        }
+        function show1() {
+            document.getElementById('button2')
+                .style.display="none";
+            document.getElementById('button3')
+                .style.display="block";
+            document.getElementById('cake')
+                .style.display="block";
+        }
+    </script>
+        
+    </body>
+        
+    </html>

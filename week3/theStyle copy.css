@@ -1,0 +1,35 @@
+/* PNGs
+https://static-mpm-optimized.s3.eu-west-2.amazonaws.com/1f689deb-df48-4de7-b6d4-119cd58eafcd_large.png
+
+*/
+#image {
+                display: none;
+            }
+#button2 {
+                display: none;
+            }
+#cake {
+                display: none;
+            }
+#button3 {
+                display: none;
+            }
+
+.fix {
+              position: absolute;
+              top: 0;
+              left: 0;    
+            }
+
+html, body {height: 100%; }
+body {
+                margin: 0;
+                box-sizing: border-box;
+                min-height: 100vh;
+
+                background-image: url('https://i.makeagif.com/media/7-01-2015/OBBkYe.gif ');
+                background-attachment: fixed;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
