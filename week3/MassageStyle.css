@@ -1,0 +1,202 @@
+/* PNGs
+https://static-mpm-optimized.s3.eu-west-2.amazonaws.com/1f689deb-df48-4de7-b6d4-119cd58eafcd_large.png
+
+*/
+#image1 {
+                display: none;
+            }
+#image2 {
+                display: none;
+            }
+#image3 {
+                display: none;
+            }
+#image4 {
+                display: none;
+            }
+#image5 {
+                display: none;
+            }
+#image6 {
+                display: none;
+            }
+#image7 {
+                display: none;
+            }
+#image8 {
+                display: none;
+            }
+#image9 {
+                display: none;
+            }
+#image10 {
+                display: none;
+            }
+#image11 {
+                display: none;
+            }
+#image12 {
+                display: none;
+            }
+#image13 {
+                display: none;
+            }
+#image14 {
+                display: none;
+            }
+#image15 {
+                display: none;
+            }
+#image16 {
+                display: none;
+            }
+#image17 {
+                display: none;
+            }
+#image18 {
+                display: none;
+            }
+#image19 {
+                display: none;
+            }
+#image20 {
+                display: none;
+            }
+#image21 {
+                display: none;
+            }
+#button2 {
+                display: none;
+            }
+#button3 {
+                display: none;
+            }
+#button4 {
+                display: none;
+            }
+#button5 {
+                display: none;
+            }
+#button6 {
+                display: none;
+            }
+#button7 {
+                display: none;
+            }
+
+.fix {
+              position: fixed;
+              bottom: 0;
+              right: 0;  
+              transform: rotate(-60deg);  
+            }
+.fix1 {
+              position: absolute;
+              bottom: 0;
+              left: 0;    
+            }
+.fix2 {
+              position: absolute;
+              top: 0vw;
+              right: 0vw;  
+              transform: rotate(160deg);  
+            }
+.fix3 {
+              position: absolute;
+              top: 0vw;
+              left: 0vw;  
+              transform: rotate(90deg);  
+            }
+.fix4 {
+              position: absolute;
+              bottom: 0vw;
+              right: 0vw;    
+            }
+.fix5 {
+              position: absolute;
+              top: 0vw;
+              right: 0vw; 
+              transform: rotate(70deg);    
+            }
+.fix6 {
+              position: absolute;
+              bottom: 30vw;
+              left: 0vw;     
+            }
+.fix7 {
+              position: absolute;
+              bottom: 30vw;
+              left: 0vw; 
+              right:0vw;   
+              transform: rotate(70deg);  
+            }
+.fix8 {
+              position: absolute;
+              top: 30vw;
+              left: 0vw;    
+              transform: rotate(120deg);  
+            }
+.fix9 {
+              position: absolute;
+              bottom: 0vw;
+              left: 0vw;    
+              transform: rotate(70deg);  
+            }
+.fix10 {
+              position: absolute;
+              bottom: 40vw;
+              left: 0vw;    
+              transform: rotate(70deg);  
+            }
+.fix11 {
+              position: absolute;
+              top: 0;
+              right: 0;  
+              transform: rotate(-60deg);  
+            }
+.fix12 {
+              position: absolute;
+              top: 0;
+              left: 40vw;    
+            }
+.fix13 {
+              position: absolute;
+              bottom: -25vw;
+              left: 40vw;    
+            }
+.fix14 {
+              position: absolute;
+              bottom: 30vw;
+              right:0vw;   
+              transform: rotate(70deg);  
+            }
+.fix15 {
+              position: absolute;
+              bottom: 10vw;
+              right:50vw;    
+            }
+.fix16 {
+              position: absolute;
+              bottom: 0vw;
+              right: 35vw;    
+            }
+
+html, body {height: 100%; }
+body {
+                margin: 0;
+                box-sizing: border-box;
+                min-height: 100vh;
+
+                background-image: url('https://i.makeagif.com/media/7-01-2015/OBBkYe.gif ');
+                background-attachment: fixed;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+
+button {
+    position:absolute;
+    top: 50%;
+    left: 30%;
+    right: 30%;
+}
