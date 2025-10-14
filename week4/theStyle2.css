@@ -20,6 +20,14 @@ h1 {
     font-family: 'Pirata One', serif;
     font-size: 5vw;
 }
+h1:hover{
+animation: fadein 3s;
+}
+@keyframes fadein {
+    from {opacity:1;}
+    to {opacity:0;}
+    
+}
 #pos {
     position:fixed; 
     left: 37%;
