@@ -5,14 +5,22 @@
         <!-- link to the external style sheet to style multiple pages -->
         <link href="theSyle.css" rel="stylesheet" />  
         <script src="theMedium.js" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     </head>
     <body> 
-        <h1>Whole Earth on Brown Rice: My Favorite Passage</h1>
+        <header class="opening">
+            <h1>Whole Earth on Other People's Mail</h1>
+        </header>
         <main>
-            <img src="ss.jpg" id="thisPix">
-            <button>click me</button>
-        </main>
-      
+       
+            <div class="pics">
+                <img id="myImage" src="mail1.png" width="500" alt="Example Image">
+                <br><br>
+                <button onclick="changeImage()">Next</button>
+            </div>
+       </main>
     </body>
         
 </html>

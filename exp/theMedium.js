@@ -7,12 +7,19 @@ const theBody = document.querySelector('body');
 let theMain = document.querySelector('main')
 // let value changes
 let theButton = document.querySelector("button");
-theButton.style.border = "10px solid black";
+
 
 // https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
-theButton.addEventListener("click", theyClicked);
+const images = [
+      "mail1.png",
+      "mail2.png",
+      "mail3.png",
+      "mail4.png"
+    ];
 
-function theyClicked(){
-    console.log("clicked!");
-    theMain.style.backgroundColor = "red";    
-}
+    let index = 0; 
+
+    function changeImage() {
+      index = (index + 1) % images.length; 
+      document.getElementById("myImage").src = images[index];
+    }

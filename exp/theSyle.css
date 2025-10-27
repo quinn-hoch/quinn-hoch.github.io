@@ -1,15 +1,83 @@
+
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+img {
+    max-width: 30vw;
+}
+:root {
+  --back: hsl(217, 76%, 8%);
+  --forward: #368f43;
+  --line: #8fc33a;
+  --pad: 50px;
+}
 body {
-    background-color: lightblue;
-  
+  margin: 0;
+  background: var(--back);
+  color: var(--forward);  
+}
+header.opening {
+  display: grid;
+  grid-template-columns: 1.1fr 2fr;
+  gap: 2rem;
+  padding: 2rem var(--pad);
+}
+header.opening h1 {
+  margin: 0;
+  font-size: 70px;
+  font-family: Lora;
+  font-weight: bolder;
+}
+main {
+  padding: 0 var(--pad) var(--pad);
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    margin: 50px;
-    padding: 50px;
-}
 button {
-    border-radius: 40px;
-    margin: 50px;
+    max-width: 20vw;
+    justify-self: right;
+    font-family: Lora;
+    border-radius: 20%;
+    border: solid 2px green;
+    color: var(--forward);
+    background-color: transparent;
 }
+button:hover {
+    border: solid 2px green;
+    color: var(--back);
+    background-color: var(--forward);
+}
+.pics {
+  position: absolute;
+  right: 50px;
+  top: 20vh;
+  justify-content: right;
+  display: grid;
+  glyph-orientation-vertical: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.pics img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.pics img:hover {
+  transform: scale(1.4);
+}
+
+#myImage {
+      place-items: center;
+      width: 600px; 
+      height: auto;  
+      display: block;
+      margin: 20px auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
