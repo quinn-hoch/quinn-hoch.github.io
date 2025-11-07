@@ -1,0 +1,64 @@
+body {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+                box-sizing: border-box;
+                min-height: 100vh;
+
+                background-image: url(disney.jpeg);
+                background-attachment: fixed;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+}
+
+h1{
+  padding: 10px;
+  border: solid 2px;
+  border-color: rgb(255, 255, 255);
+  border-radius: 25px;
+  color:rgb(0, 0, 0);
+  background-color: rgb(167, 187, 242);
+  font-family: 'Momo Signature';
+  height: 100px;
+  width: 250px;
+  margin-left: -200px;
+  font-size: 30px;
+}
+p{
+    font-family: 'Times';
+    width: 70vw;
+    max-width: 500px;
+    background-color: rgb(167, 187, 242);
+    padding: 30px;
+    z-index: 2;
+    border-radius: 25px;
+    position: absolute; 
+    top: 20%;
+    height: 48vh;
+    overflow:scroll;
+    text-align: justify;
+    border: solid, 6px;
+    border-color: rgb(255, 255, 255);
+
+}
+
+h2{
+  padding: 10px;
+  border: solid 2px;
+  border-color: white;
+  border-radius: 25px;
+  color:black;
+  background-color: rgb(167, 187, 242);
+  font-family: 'Momo Signature';
+  height: 100px;
+  width: 250px;
+  margin-left: 200px;
+  position: absolute;
+  bottom:0px;
+  font-size: 17px;
+}
+i{
+    font-size: 27px;
+    text-align: right;
+}
