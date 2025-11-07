@@ -1,0 +1,65 @@
+body {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+                box-sizing: border-box;
+                min-height: 100vh;
+
+                background-image: url(https://t4.ftcdn.net/jpg/01/26/21/61/360_F_126216157_NMcUhK1iOgw2asroRaX0686iYgjbdMNr.jpg);
+                background-attachment: fixed;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+}
+
+h1{
+  padding: 10px;
+  border: solid 4px;
+  border-color: rgb(8, 162, 213);
+  border-radius: 25px;
+  color: white;
+  background-color: rgb(12, 42, 49);
+  font-family: 'Roboto';
+  height: 100px;
+  width: 250px;
+  margin-left: -200px;
+  font-size: 30px;
+}
+p{
+    font-family: 'Roboto';
+    width: 70vw;
+    color:rgb(12, 42, 49);
+    max-width: 500px;
+    background-color: rgb(244, 244, 244);
+    padding: 30px;
+    z-index: 2;
+    border-radius: 25px;
+    position: absolute; 
+    top: 20%;
+    height: 48vh;
+    overflow:scroll;
+    text-align: justify;
+    border: solid, 6px;
+    border-color: rgb(8, 162, 213);
+
+}
+
+h2{
+  padding: 10px;
+  border: solid 4px;
+  border-color: rgb(8, 162, 213);
+  border-radius: 25px;
+  color:white;
+  background-color: rgb(12, 42, 49);
+  font-family: 'Roboto';
+  height: 100px;
+  width: 250px;
+  margin-left: 200px;
+  position: absolute;
+  bottom:-10px;
+  font-size: 20px;
+}
+i{
+    font-size: 30px;
+    text-align: right;
+}
