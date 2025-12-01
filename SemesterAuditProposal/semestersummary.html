@@ -1,0 +1,118 @@
+<html>
+    <head>
+      <title> semsum </title>
+      <style>
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center; 
+    padding: 100px;
+  }
+
+  .item img {
+    width: auto;
+    height: 150px;
+    border-radius: 6px;
+  }
+
+  .item a {
+    display: block; 
+    margin-top: 8px;
+    font-size: 16px;
+    text-decoration: none;
+    color:rgb(37, 0, 170);
+  }
+
+  .item a:hover {
+    text-decoration: underline;
+  }
+    header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  header h2 {
+    font-size: 2rem;
+    margin: 0;
+    color:rgb(255, 217, 0);
+  }
+  
+  body {
+    background: #1dc500;
+  }
+
+  #next {
+                position: absolute;
+                bottom: 30px;
+                right: 15px;
+            }
+#back {
+                position: absolute;
+                bottom: 30px;
+                left: 15px;
+            }
+            button {
+                background-color:rgb(255, 217, 0);
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-weight: 700;
+                padding: 10px;
+                border-color: transparent;
+                border-radius: 30%;
+                color:rgb(37, 0, 170); 
+                max-height: 30px;
+              
+            }
+
+            button:hover{
+                background-color: transparent; 
+                border-color: rgb(255, 217, 0);
+            }
+</style>
+
+</head>
+<body>
+
+<header>
+  <h2>Semester Overview:</h2>
+</header>
+
+<div class="grid-container">
+
+  <div class="item">
+    <img src="week1.jpg">
+    <a href="https://quinn-hoch.github.io/week1/index2.html">Site 1</a>
+  </div>
+
+  <div class="item">
+    <img src="week2.jpg">
+    <a href="https://quinn-hoch.github.io/week2/index3.html">Site 2</a>
+  </div>
+
+  <div class="item">
+    <img src="week3.jpg">
+    <a href="https://quinn-hoch.github.io/week3/indexreal.html">Site 3</a>
+  </div>
+
+  <div class="item">
+    <img src="week4.jpg">
+    <a href="https://quinn-hoch.github.io/week4/index0.html">Site 4</a>
+  </div>
+
+  <div class="item">
+    <img src="week5.jpg">
+    <a href="https://quinn-hoch.github.io/SocialDilemma/index.html">Site 9</a>
+  </div>
+
+  <div class="item">
+    <img src="week6.jpg">
+    <a href="https://quinn-hoch.github.io/AntiSocialNetwork/index.html">Site 10</a>
+  </div>
+
+</div>
+        <a href="https://quinn-hoch.github.io/SemesterAuditProposal/title.html"></a><button id="back">Back</button>
+        <a href="https://quinn-hoch.github.io/SemesterAuditProposal/highlights:challenges.html"></a><button id="next">Next</button>
+    </body>
+</html>

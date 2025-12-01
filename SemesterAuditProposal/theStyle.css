@@ -1,0 +1,97 @@
+
+
+			body {
+				background: #1dc500;
+                display: flex;
+			}
+            h1 {
+				align-content: center;
+                max-width: 290px;
+                padding: 100px;
+                color:rgb(255, 217, 0);
+                font-size: 40;
+			}
+
+
+            h4 {
+				position: absolute;
+                right: 20vw;
+                top: 65vh;
+                color:rgb(255, 217, 0);
+			}
+
+            #next {
+                position: absolute;
+                bottom: 30px;
+                right: 15px;
+            }
+            #back {
+                position: absolute;
+                bottom: 30px;
+                left: 15px;
+            }
+
+            p {
+                padding: 3px;
+                color:rgb(37, 0, 170);
+                border: 1px solid;
+                border-color: rgb(255, 217, 0);
+            }
+
+            .theDescription {
+                background-color: rgb(151, 170, 151);
+                margin: 250px;
+            }
+
+            button {
+                background-color:rgb(255, 217, 0);
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-weight: 700;
+                padding: 10px;
+                border-color: transparent;
+                border-radius: 30%;
+                color:rgb(37, 0, 170); 
+                max-height: 30px;
+              
+            }
+
+            button:hover{
+                background-color: transparent; 
+                border-color: rgb(255, 217, 0);
+            }
+
+            .container {
+                align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+}
+
+.column {
+  flex: 1;
+  padding: 100px;
+}
+
+.column h2 {
+  margin-top: 0;
+}
+
+img {
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    right: 100px;
+    top: 45vh;
+}
+
+h2 {
+    color: rgb(255, 217, 0);
+}
+
+h3 {
+    position: absolute;
+    top: 50vh;
+    left: 45vw;
+color:rgb(37, 0, 170); 
+}
