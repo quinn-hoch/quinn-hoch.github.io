@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Interactive Flipbook with Buttons</title>
+
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background: #f2f2f2;
+        font-family: sans-serif;
+    }
+
+    #flipbook {
+        width: 320px;
+        height: 780px;
+        perspective: 1500px;
+        position: relative;
+    }
+
+    .page {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        transform-origin: left center;
+        transition: transform 0.8s ease;
+        box-shadow: 0 0 8px rgba(0,0,0,0.2);
+        background-size: cover;
+        background-position: center;
+        backface-visibility: hidden;
+    }
+
+    .flipped {
+        transform: rotateY(-180deg);
+    }
+
+   
+    .hotspot-btn {
+        position: absolute;
+        padding: 8px 14px;
+        background: rgba(0, 106, 255, 0.85);
+        color: white;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: 0.2s;
+        border: 2px solid #003f8c;
+        text-align: center;
+        white-space: nowrap;
+        user-select: none;
+    }
+
+    .hotspot-btn:hover {
+        background: rgba(0, 140, 255, 1);
+        transform: scale(1.08);
+    }
+
+    #controls {
+        position: absolute;
+        bottom: 20px;
+        display: flex;
+        gap: 10px;
+    }
+
+    button {
+        padding: 8px 14px;
+        background: #333;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+
+    button:hover {
+        background: #555;
+    }
+</style>
+</head>
+
+<body>
+
+<div id="flipbook"></div>
+
+<div id="controls">
+    <button onclick="prevPage()">Prev</button>
+    <button onclick="nextPage()">Next</button>
+</div>
+
+<script>
+const imagePaths = [
+    "images/page1.jpg",
+    "images/page2.jpg",
+    "images/page3.jpg",
+    "images/page4.jpg",
+    "images/page5.jpg",
+    "images/page6.jpg",
+    "images/page7.jpg",
+    "images/page8.jpg",
+    "images/page9.jpg",
+    "images/page10.jpg"
+];
+
+const buttons = [
+    /* { page: 0, x: 40,  y: 300, text: "what's this?", url: "first.html" },
+    { page: 0, x: 250, y: 120, text: "", url: ".html" },
+
+    { page: 2, x: 150, y: 200, text: "", url: ".html" }, */
+
+    { page: 7, x: 230, y: 520, text: "more", url: "books.html" }
+];
+
+const flipbook = document.getElementById("flipbook");
+let currentPage = 0;
+let pages = [];
+
+function createFlipbook() {
+    imagePaths.forEach((src, index) => {
+        const page = document.createElement("div");
+        page.className = "page";
+        page.style.zIndex = imagePaths.length - index;
+        page.style.backgroundImage = `url(${src})`;
+
+        flipbook.appendChild(page);
+        pages.push(page);
+
+        buttons
+            .filter(b => b.page === index)
+            .forEach(b => {
+                const btn = document.createElement("div");
+                btn.className = "hotspot-btn";
+                btn.innerText = b.text;
+                btn.style.left = b.x + "px";
+                btn.style.top  = b.y + "px";
+                btn.onclick = () => window.location.href = b.url;
+                page.appendChild(btn);
+            });
+    });
+}
+
+function nextPage() {
+    if (currentPage < pages.length) {
+        pages[currentPage].classList.add("flipped");
+        currentPage++;
+    }
+}
+
+function prevPage() {
+    if (currentPage > 0) {
+        currentPage--;
+        pages[currentPage].classList.remove("flipped");
+    }
+}
+
+createFlipbook();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,152 @@
+
+.typing-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   
+  align-items: center;        
+  font-family: monospace;
+  text-align: center;
+}
+
+.line1, .line2 {
+  white-space: nowrap;
+  border-right: 2px solid black;
+  padding-right: 6px;
+  min-width: 1ch; 
+  animation: cursorBlink .6s infinite;
+}
+
+.line1 {
+  font-size: 60px;
+}
+
+.line2 {
+  font-size: 18px;       
+  margin-top: 10px;
+}
+
+@keyframes cursorBlink {
+  50% { border-color: transparent; }
+}
+
+.letter {
+  display: inline-block;
+  min-width: 1ch;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+#book {
+            width: 400px;
+            height: 1000px;
+            margin: 50px auto;
+            border: 2px solid #333;
+            background: white;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }
+
+#book img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+button {
+            margin: 15px;
+            padding: 10px 20px;
+            border: none;
+            background: #333;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+button:hover {
+            background: #555;
+        }
+
+.image-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 800px; 
+    margin: 0 auto;
+}
+
+.responsive-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Button positioned relative to the image */
+/* books page */
+.hotspot1 {
+    position: absolute;
+    top: 32%;     
+    left: 60%;    
+    transform: translate(-50%, -50%);
+}
+
+.hotspot2 {
+    position: absolute;
+    top: 37%;     
+    left: 75%;    
+    transform: translate(-50%, -50%);
+}
+
+/* adjust */
+.hotspot3 {
+    position: absolute;
+    top: 42%;     
+    left: 75%;    
+    transform: translate(-50%, -50%);
+}
+.hotspot4 {
+    position: absolute;
+    top: 47%;     
+    left: 75%;    
+    transform: translate(-50%, -50%);
+}
+.hotspot5 {
+    position: absolute;
+    top: 52%;     
+    left: 75%;    
+    transform: translate(-50%, -50%);
+}
+.hotspot6 {
+    position: absolute;
+    top: 57%;     
+    left: 75%;    
+    transform: translate(-50%, -50%);
+}
+.hotspot7 {
+    position: absolute;
+    top: 62%;     
+    left: 75%;    
+    transform: translate(-50%, -50%);
+}
+.hotspot8 {
+    position: absolute;
+    top: 67%;     
+    left: 75%;    
+    transform: translate(-50%, -50%);
+}
+.hotspot9 {
+    position: absolute;
+    top: 72%;     
+    left: 75%;    
+    transform: translate(-50%, -50%);
+}
+.hotspot10 {
+    position: absolute;
+    top: 77%;     
+    left: 75%;    
+    transform: translate(-50%, -50%);
+}
+.hotspot11 {
+    position: absolute;
+    top: 82%;     
+    left: 75%;    
+    transform: translate(-50%, -50%);
+}
