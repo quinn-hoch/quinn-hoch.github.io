@@ -36,6 +36,20 @@
   background-color: transparent;
   transition: background-color 0.3s ease;
 }
+
+.toolong {
+    min-width: 300px;
+    max-width: none;
+}
+
+.toolong2 {
+    min-width: 200px;
+    max-width: none;
+}
+.toolong3 { 
+    min-width: 250px;
+    max-width: none;
+}
 #book {
             width: 400px;
             height: 1000px;
@@ -52,19 +66,85 @@
             object-fit: cover;
         }
 
-button {
-            margin: 15px;
-            padding: 10px 20px;
-            border: none;
-            background: #333;
-            color: white;
-            cursor: pointer;
-            border-radius: 5px;
-        }
 
-button:hover {
-            background: #555;
-        }
+
+ #flipbook {
+        width: 320px;
+        height: 780px;
+        perspective: 1500px;
+        position: relative;
+    }
+
+    .page {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        transform-origin: left center;
+        transition: transform 0.8s ease;
+        box-shadow: 0 0 8px rgba(0,0,0,0.2);
+        background-size: cover;
+        background-position: center;
+        backface-visibility: hidden;
+    }
+
+    .flipped {
+        transform: rotateY(-180deg);
+    }
+
+   
+    .hotspot-btn {
+        position: absolute;
+        padding: 3px 8px;
+        background: transparent;
+        color: transparent;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: 0.2s;
+        border: transparent;
+        text-align: center;
+        white-space: nowrap;
+        user-select: none;
+    }
+
+    .hotspot-btn:hover {
+        background: rgb(255, 255, 255);
+        transform: scale(1.08);
+        color: blue; 
+        border: 2px solid blue;
+    }
+
+    #controls {
+        position: absolute;
+        bottom: 20px;
+        display: flex;
+        gap: 10px;
+    }
+
+    .nextback {
+        padding: 8px 14px;
+        margin-left: 70px ;
+        margin-right: 70px;
+        background: #333;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+
+    .nextback:hover {
+        background: #555;
+    }
+            #back {
+                position: absolute;
+                top: 20px;
+                left: 15px;
+            }
+
+            #back:hover {
+                background-color: yellow;
+            }
+    
 
 .image-wrapper {
     position: relative;
@@ -79,74 +159,122 @@ button:hover {
     display: block;
 }
 
-/* Button positioned relative to the image */
+.clearclick {
+    color: transparent;
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.clearclick:hover {
+    color: purple;
+    background-color: rgb(255, 255, 255);
+}
+
 /* books page */
+/* On Writing */
 .hotspot1 {
     position: absolute;
-    top: 32%;     
-    left: 60%;    
+    top: 35%;     
+    left: 44%;    
     transform: translate(-50%, -50%);
 }
 
+/*  C and P */
 .hotspot2 {
     position: absolute;
-    top: 37%;     
-    left: 75%;    
+    top: 39%;     
+    left: 51%;    
     transform: translate(-50%, -50%);
 }
 
-/* adjust */
+/* Jesus Son*/
 .hotspot3 {
     position: absolute;
     top: 42%;     
-    left: 75%;    
+    left: 45%;    
     transform: translate(-50%, -50%);
 }
+
+/* Sigrid Nunez */
 .hotspot4 {
     position: absolute;
-    top: 47%;     
-    left: 75%;    
+    top: 45%;     
+    left: 52%;    
     transform: translate(-50%, -50%);
 }
+
+/* Good Material*/
 .hotspot5 {
     position: absolute;
-    top: 52%;     
-    left: 75%;    
+    top: 49%;     
+    left: 46%;    
     transform: translate(-50%, -50%);
 }
+
+/* Infinite */
 .hotspot6 {
     position: absolute;
-    top: 57%;     
-    left: 75%;    
+    top: 53%;     
+    left: 46%;    
     transform: translate(-50%, -50%);
 }
+/* Troubling Love */
 .hotspot7 {
     position: absolute;
-    top: 62%;     
-    left: 75%;    
+    top: 56%;     
+    left: 50%;    
     transform: translate(-50%, -50%);
 }
+/* Pizza Girl*/
 .hotspot8 {
     position: absolute;
-    top: 67%;     
-    left: 75%;    
+    top: 60%;     
+    left: 50%;    
     transform: translate(-50%, -50%);
 }
+/* Didion */
 .hotspot9 {
     position: absolute;
-    top: 72%;     
-    left: 75%;    
+    top: 62%;     
+    left: 50%;    
     transform: translate(-50%, -50%);
 }
+
+/* Morrie */
 .hotspot10 {
     position: absolute;
-    top: 77%;     
-    left: 75%;    
+    top: 65%;     
+    left: 50%;    
     transform: translate(-50%, -50%);
 }
+
+/*end*/
 .hotspot11 {
     position: absolute;
-    top: 82%;     
-    left: 75%;    
+    top: 69%;     
+    left: 54%;    
+    transform: translate(-50%, -50%);
+}
+
+/*goodreads*/ 
+.hotspot12 {
+    position: absolute;
+    top: 95%;     
+    left: 63%;    
+    transform: translate(-50%, -50%);
+}
+/*wwf*/
+.hotspot13 {
+    position: absolute;
+    top: 85%;     
+    left: 93%;    
+    transform: translate(-50%, -50%);
+}
+
+/*scrabble*/
+.hotspot14 {
+    position: absolute;
+    top: 10%;     
+    left: 42%;    
     transform: translate(-50%, -50%);
 }
