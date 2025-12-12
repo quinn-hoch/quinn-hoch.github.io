@@ -84,7 +84,6 @@ function nextPage() {
         pages[currentPage].classList.add("flipped");
         currentPage++;
     } else {
-        // reached end → reset flipbook
         pages.forEach(p => p.classList.remove("flipped"));
         currentPage = 0;
     }
@@ -95,7 +94,6 @@ function prevPage() {
         currentPage--;
         pages[currentPage].classList.remove("flipped");
     } else {
-        // at start → flip all pages to reach the end
         pages.forEach(p => p.classList.add("flipped"));
         currentPage = pages.length;
     }
